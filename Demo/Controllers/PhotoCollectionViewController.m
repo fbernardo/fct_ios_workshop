@@ -8,6 +8,7 @@
 
 #import "PhotoCollectionViewController.h"
 #import "PhotoCollectionViewCell.h"
+#import "PhotoTileViewController.h"
 
 static NSString *const CellIdentifier = @"PhotoCellIdentifier";
 
@@ -43,6 +44,25 @@ static NSString *const CellIdentifier = @"PhotoCellIdentifier";
             UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Dang!" message:@"Something went wrong with your pretty pics..." delegate:nil cancelButtonTitle:@"Fuck..." otherButtonTitles: nil];
             [alertView show];
         }];
+    }
+}
+
+#pragma  mark - Storyboard
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if([segue.identifier isEqualToString:@"pushTileVC"])
+    {
+        NSArray *indexPaths = self.collectionView.indexPathsForSelectedItems;
+        NSMutableArray *assets = [NSMutableArray arrayWithCapacity:indexPaths.count];
+        
+        [indexPaths enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+            NSIndexPath *indexPath = (NSIndexPath*) obj;
+            [assets addObject:self.items[indexPath.row]];
+        }];
+        
+        PhotoTileViewController *photoCollectionVC = (PhotoTileViewController *) segue.destinationViewController;
+        photoCollectionVC.assets = assets;
     }
 }
 

@@ -27,6 +27,7 @@
 		4C64B83D1804A2D8009932CE /* BinaryLayoutTreemap.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C64B8371804A2D8009932CE /* BinaryLayoutTreemap.m */; };
 		4C64B8441804A4B1009932CE /* PhotoCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C64B8431804A4B1009932CE /* PhotoCollectionViewController.m */; };
 		4C64B8481804A61D009932CE /* PhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C64B8471804A61D009932CE /* PhotoCollectionViewCell.m */; };
+		4C64B84C1804AC9C009932CE /* PhotoTileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C64B84B1804AC9C009932CE /* PhotoTileViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,8 @@
 		4C64B8431804A4B1009932CE /* PhotoCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCollectionViewController.m; sourceTree = "<group>"; };
 		4C64B8461804A61D009932CE /* PhotoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhotoCollectionViewCell.h; path = Views/PhotoCollectionViewCell.h; sourceTree = "<group>"; };
 		4C64B8471804A61D009932CE /* PhotoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PhotoCollectionViewCell.m; path = Views/PhotoCollectionViewCell.m; sourceTree = "<group>"; };
+		4C64B84A1804AC9C009932CE /* PhotoTileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoTileViewController.h; sourceTree = "<group>"; };
+		4C64B84B1804AC9C009932CE /* PhotoTileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoTileViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +206,8 @@
 			children = (
 				4C64B8421804A4B1009932CE /* PhotoCollectionViewController.h */,
 				4C64B8431804A4B1009932CE /* PhotoCollectionViewController.m */,
+				4C64B84A1804AC9C009932CE /* PhotoTileViewController.h */,
+				4C64B84B1804AC9C009932CE /* PhotoTileViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -318,6 +323,7 @@
 				4C64B83D1804A2D8009932CE /* BinaryLayoutTreemap.m in Sources */,
 				4C64B8391804A2D8009932CE /* ALAssetRepresentation+Size.m in Sources */,
 				4C64B83C1804A2D8009932CE /* AbstractTreemap.m in Sources */,
+				4C64B84C1804AC9C009932CE /* PhotoTileViewController.m in Sources */,
 				4C64B8081804A272009932CE /* AppDelegate.m in Sources */,
 				4C64B8041804A272009932CE /* main.m in Sources */,
 				4C64B83B1804A2D8009932CE /* UIImage+BinPacking.m in Sources */,

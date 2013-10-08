@@ -48,11 +48,36 @@
                             <outlet property="delegate" destination="a6Q-mF-8U5" id="Ruy-OW-xde"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" title="Choose da pics..." id="Yt6-Lc-dHI"/>
+                    <navigationItem key="navigationItem" title="Choose da pics..." id="Yt6-Lc-dHI">
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="O3c-Ux-gG5">
+                            <connections>
+                                <segue destination="tLP-Cn-5KT" kind="push" identifier="pushTileVC" id="bHR-OE-9S1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q3D-DZ-U24" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="690" y="-3"/>
+        </scene>
+        <!--Photo Tile View Controller - Da tile!-->
+        <scene sceneID="Wtf-xT-blj">
+            <objects>
+                <viewController id="tLP-Cn-5KT" customClass="PhotoTileViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6du-Tb-03e"/>
+                        <viewControllerLayoutGuide type="bottom" id="e5P-II-anf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0S4-Hh-ugv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Da tile!" id="Zc5-1t-c7B"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f0e-XK-x3b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1199" y="-3"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="V1D-mt-H51">
