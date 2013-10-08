@@ -21,6 +21,11 @@
 		4C64B8191804A273009932CE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C64B7FB1804A272009932CE /* UIKit.framework */; };
 		4C64B8211804A273009932CE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C64B81F1804A273009932CE /* InfoPlist.strings */; };
 		4C64B8231804A273009932CE /* DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C64B8221804A273009932CE /* DemoTests.m */; };
+		4C64B8391804A2D8009932CE /* ALAssetRepresentation+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C64B82E1804A2D8009932CE /* ALAssetRepresentation+Size.m */; };
+		4C64B83A1804A2D8009932CE /* ALAssetsLibrary+AssetsAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C64B8301804A2D8009932CE /* ALAssetsLibrary+AssetsAccess.m */; };
+		4C64B83B1804A2D8009932CE /* UIImage+BinPacking.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C64B8321804A2D8009932CE /* UIImage+BinPacking.m */; };
+		4C64B83C1804A2D8009932CE /* AbstractTreemap.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C64B8351804A2D8009932CE /* AbstractTreemap.m */; };
+		4C64B83D1804A2D8009932CE /* BinaryLayoutTreemap.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C64B8371804A2D8009932CE /* BinaryLayoutTreemap.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,17 @@
 		4C64B81E1804A273009932CE /* DemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DemoTests-Info.plist"; sourceTree = "<group>"; };
 		4C64B8201804A273009932CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4C64B8221804A273009932CE /* DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoTests.m; sourceTree = "<group>"; };
+		4C64B82D1804A2D8009932CE /* ALAssetRepresentation+Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ALAssetRepresentation+Size.h"; sourceTree = "<group>"; };
+		4C64B82E1804A2D8009932CE /* ALAssetRepresentation+Size.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ALAssetRepresentation+Size.m"; sourceTree = "<group>"; };
+		4C64B82F1804A2D8009932CE /* ALAssetsLibrary+AssetsAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ALAssetsLibrary+AssetsAccess.h"; sourceTree = "<group>"; };
+		4C64B8301804A2D8009932CE /* ALAssetsLibrary+AssetsAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ALAssetsLibrary+AssetsAccess.m"; sourceTree = "<group>"; };
+		4C64B8311804A2D8009932CE /* UIImage+BinPacking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+BinPacking.h"; sourceTree = "<group>"; };
+		4C64B8321804A2D8009932CE /* UIImage+BinPacking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BinPacking.m"; sourceTree = "<group>"; };
+		4C64B8341804A2D8009932CE /* AbstractTreemap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractTreemap.h; sourceTree = "<group>"; };
+		4C64B8351804A2D8009932CE /* AbstractTreemap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractTreemap.m; sourceTree = "<group>"; };
+		4C64B8361804A2D8009932CE /* BinaryLayoutTreemap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinaryLayoutTreemap.h; sourceTree = "<group>"; };
+		4C64B8371804A2D8009932CE /* BinaryLayoutTreemap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BinaryLayoutTreemap.m; sourceTree = "<group>"; };
+		4C64B8381804A2D8009932CE /* Mappable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mappable.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +128,8 @@
 		4C64B7FD1804A272009932CE /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				4C64B82C1804A2D8009932CE /* TileView */,
+				4C64B8331804A2D8009932CE /* Tiling */,
 				4C64B8061804A272009932CE /* AppDelegate.h */,
 				4C64B8071804A272009932CE /* AppDelegate.m */,
 				4C64B8091804A272009932CE /* Main.storyboard */,
@@ -150,6 +168,31 @@
 				4C64B81F1804A273009932CE /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4C64B82C1804A2D8009932CE /* TileView */ = {
+			isa = PBXGroup;
+			children = (
+				4C64B82D1804A2D8009932CE /* ALAssetRepresentation+Size.h */,
+				4C64B82E1804A2D8009932CE /* ALAssetRepresentation+Size.m */,
+				4C64B82F1804A2D8009932CE /* ALAssetsLibrary+AssetsAccess.h */,
+				4C64B8301804A2D8009932CE /* ALAssetsLibrary+AssetsAccess.m */,
+				4C64B8311804A2D8009932CE /* UIImage+BinPacking.h */,
+				4C64B8321804A2D8009932CE /* UIImage+BinPacking.m */,
+			);
+			path = TileView;
+			sourceTree = "<group>";
+		};
+		4C64B8331804A2D8009932CE /* Tiling */ = {
+			isa = PBXGroup;
+			children = (
+				4C64B8341804A2D8009932CE /* AbstractTreemap.h */,
+				4C64B8351804A2D8009932CE /* AbstractTreemap.m */,
+				4C64B8361804A2D8009932CE /* BinaryLayoutTreemap.h */,
+				4C64B8371804A2D8009932CE /* BinaryLayoutTreemap.m */,
+				4C64B8381804A2D8009932CE /* Mappable.h */,
+			);
+			path = Tiling;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,9 +292,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C64B83A1804A2D8009932CE /* ALAssetsLibrary+AssetsAccess.m in Sources */,
+				4C64B83D1804A2D8009932CE /* BinaryLayoutTreemap.m in Sources */,
 				4C64B80E1804A272009932CE /* ViewController.m in Sources */,
+				4C64B8391804A2D8009932CE /* ALAssetRepresentation+Size.m in Sources */,
+				4C64B83C1804A2D8009932CE /* AbstractTreemap.m in Sources */,
 				4C64B8081804A272009932CE /* AppDelegate.m in Sources */,
 				4C64B8041804A272009932CE /* main.m in Sources */,
+				4C64B83B1804A2D8009932CE /* UIImage+BinPacking.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
