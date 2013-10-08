@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="a6Q-mF-8U5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="omc-Hv-bxA">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
     <scenes>
-        <!--Photo Collection View Controller-->
+        <!--Photo Collection View Controller - Choose da pics...-->
         <scene sceneID="qhv-Ic-xBe">
             <objects>
                 <collectionViewController autoresizesArchivedViewToFullSize="NO" clearsSelectionOnViewWillAppear="NO" id="a6Q-mF-8U5" customClass="PhotoCollectionViewController" sceneMemberID="viewController">
@@ -20,7 +20,7 @@
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCellIdentifier" id="4VM-vh-mrG" customClass="PhotoCollectionViewCell">
-                                <rect key="frame" x="5" y="10" width="100" height="100"/>
+                                <rect key="frame" x="5" y="74" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
@@ -48,8 +48,27 @@
                             <outlet property="delegate" destination="a6Q-mF-8U5" id="Ruy-OW-xde"/>
                         </connections>
                     </collectionView>
+                    <navigationItem key="navigationItem" title="Choose da pics..." id="Yt6-Lc-dHI"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q3D-DZ-U24" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="690" y="-3"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="V1D-mt-H51">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="omc-Hv-bxA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0zs-lv-P9D">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="a6Q-mF-8U5" kind="relationship" relationship="rootViewController" id="c7R-T1-HR3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Ec-GI-HK2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="164" y="-3"/>
         </scene>
