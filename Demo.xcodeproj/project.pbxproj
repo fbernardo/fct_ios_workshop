@@ -14,7 +14,6 @@
 		4C64B8041804A272009932CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C64B8031804A272009932CE /* main.m */; };
 		4C64B8081804A272009932CE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C64B8071804A272009932CE /* AppDelegate.m */; };
 		4C64B80B1804A272009932CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C64B8091804A272009932CE /* Main.storyboard */; };
-		4C64B80E1804A272009932CE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C64B80D1804A272009932CE /* ViewController.m */; };
 		4C64B8101804A272009932CE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C64B80F1804A272009932CE /* Images.xcassets */; };
 		4C64B8171804A273009932CE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C64B8161804A273009932CE /* XCTest.framework */; };
 		4C64B8181804A273009932CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C64B7F71804A272009932CE /* Foundation.framework */; };
@@ -50,8 +49,6 @@
 		4C64B8061804A272009932CE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4C64B8071804A272009932CE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		4C64B80A1804A272009932CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4C64B80C1804A272009932CE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4C64B80D1804A272009932CE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		4C64B80F1804A272009932CE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4C64B8151804A273009932CE /* DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C64B8161804A273009932CE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -133,8 +130,6 @@
 				4C64B8061804A272009932CE /* AppDelegate.h */,
 				4C64B8071804A272009932CE /* AppDelegate.m */,
 				4C64B8091804A272009932CE /* Main.storyboard */,
-				4C64B80C1804A272009932CE /* ViewController.h */,
-				4C64B80D1804A272009932CE /* ViewController.m */,
 				4C64B80F1804A272009932CE /* Images.xcassets */,
 				4C64B7FE1804A272009932CE /* Supporting Files */,
 			);
@@ -294,7 +289,6 @@
 			files = (
 				4C64B83A1804A2D8009932CE /* ALAssetsLibrary+AssetsAccess.m in Sources */,
 				4C64B83D1804A2D8009932CE /* BinaryLayoutTreemap.m in Sources */,
-				4C64B80E1804A272009932CE /* ViewController.m in Sources */,
 				4C64B8391804A2D8009932CE /* ALAssetRepresentation+Size.m in Sources */,
 				4C64B83C1804A2D8009932CE /* AbstractTreemap.m in Sources */,
 				4C64B8081804A272009932CE /* AppDelegate.m in Sources */,
