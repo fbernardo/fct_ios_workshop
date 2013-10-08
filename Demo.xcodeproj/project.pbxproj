@@ -25,7 +25,8 @@
 		4C64B83B1804A2D8009932CE /* UIImage+BinPacking.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C64B8321804A2D8009932CE /* UIImage+BinPacking.m */; };
 		4C64B83C1804A2D8009932CE /* AbstractTreemap.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C64B8351804A2D8009932CE /* AbstractTreemap.m */; };
 		4C64B83D1804A2D8009932CE /* BinaryLayoutTreemap.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C64B8371804A2D8009932CE /* BinaryLayoutTreemap.m */; };
-		4C64B8411804A454009932CE /* CollectionPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C64B8401804A454009932CE /* CollectionPhotoViewController.m */; };
+		4C64B8441804A4B1009932CE /* PhotoCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C64B8431804A4B1009932CE /* PhotoCollectionViewController.m */; };
+		4C64B8481804A61D009932CE /* PhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C64B8471804A61D009932CE /* PhotoCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,8 +68,10 @@
 		4C64B8361804A2D8009932CE /* BinaryLayoutTreemap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinaryLayoutTreemap.h; sourceTree = "<group>"; };
 		4C64B8371804A2D8009932CE /* BinaryLayoutTreemap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BinaryLayoutTreemap.m; sourceTree = "<group>"; };
 		4C64B8381804A2D8009932CE /* Mappable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mappable.h; sourceTree = "<group>"; };
-		4C64B83F1804A454009932CE /* CollectionPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionPhotoViewController.h; sourceTree = "<group>"; };
-		4C64B8401804A454009932CE /* CollectionPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionPhotoViewController.m; sourceTree = "<group>"; };
+		4C64B8421804A4B1009932CE /* PhotoCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCollectionViewController.h; sourceTree = "<group>"; };
+		4C64B8431804A4B1009932CE /* PhotoCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCollectionViewController.m; sourceTree = "<group>"; };
+		4C64B8461804A61D009932CE /* PhotoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhotoCollectionViewCell.h; path = Views/PhotoCollectionViewCell.h; sourceTree = "<group>"; };
+		4C64B8471804A61D009932CE /* PhotoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PhotoCollectionViewCell.m; path = Views/PhotoCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +131,7 @@
 		4C64B7FD1804A272009932CE /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				4C64B8491804A623009932CE /* Views */,
 				4C64B83E1804A420009932CE /* Controllers */,
 				4C64B82C1804A2D8009932CE /* TileView */,
 				4C64B8331804A2D8009932CE /* Tiling */,
@@ -197,10 +201,19 @@
 		4C64B83E1804A420009932CE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				4C64B83F1804A454009932CE /* CollectionPhotoViewController.h */,
-				4C64B8401804A454009932CE /* CollectionPhotoViewController.m */,
+				4C64B8421804A4B1009932CE /* PhotoCollectionViewController.h */,
+				4C64B8431804A4B1009932CE /* PhotoCollectionViewController.m */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4C64B8491804A623009932CE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4C64B8461804A61D009932CE /* PhotoCollectionViewCell.h */,
+				4C64B8471804A61D009932CE /* PhotoCollectionViewCell.m */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,13 +314,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C64B83A1804A2D8009932CE /* ALAssetsLibrary+AssetsAccess.m in Sources */,
+				4C64B8481804A61D009932CE /* PhotoCollectionViewCell.m in Sources */,
 				4C64B83D1804A2D8009932CE /* BinaryLayoutTreemap.m in Sources */,
 				4C64B8391804A2D8009932CE /* ALAssetRepresentation+Size.m in Sources */,
 				4C64B83C1804A2D8009932CE /* AbstractTreemap.m in Sources */,
 				4C64B8081804A272009932CE /* AppDelegate.m in Sources */,
 				4C64B8041804A272009932CE /* main.m in Sources */,
 				4C64B83B1804A2D8009932CE /* UIImage+BinPacking.m in Sources */,
-				4C64B8411804A454009932CE /* CollectionPhotoViewController.m in Sources */,
+				4C64B8441804A4B1009932CE /* PhotoCollectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
