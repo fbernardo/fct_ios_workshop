@@ -12,4 +12,7 @@
 
 @property (nonatomic, copy) NSArray *assets;
 
+@property (strong, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
+@property (strong, nonatomic) IBOutlet UIImageView *imageView;
+
 @end
