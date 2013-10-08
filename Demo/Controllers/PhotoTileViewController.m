@@ -22,9 +22,11 @@
     return self;
 }
 
-- (void)viewDidLoad
+#pragma mark - View
+
+- (void)viewWillAppear:(BOOL)animated
 {
-    [super viewDidLoad];
+    [super viewWillAppear: animated];
 	// Do any additional setup after loading the view.
 
     NSMutableArray *arr = [NSMutableArray arrayWithCapacity:self.assets.count];
@@ -49,4 +51,37 @@
     });
 }
 
+#pragma mark - Status bar
+
+- (BOOL)prefersStatusBarHidden
+{
+    return self.shouldHideStatusBar;
+}
+
+- (UIStatusBarAnimation)preferredStatusBarUpdateAnimation
+{
+    return UIStatusBarAnimationSlide;
+}
+
+#pragma mark - Gesture
+
+- (IBAction)didTapView:(UITapGestureRecognizer*)gesture
+{
+    BOOL isHidden = self.navigationController.navigationBarHidden;
+    BOOL shouldShow = ! isHidden;
+    self.shouldHideStatusBar = shouldShow;
+    if(! shouldShow)
+    {
+        [self setNeedsStatusBarAppearanceUpdate];
+    }
+    else
+    {
+        [UIView animateWithDuration:0.12 delay:0 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
+            [self setNeedsStatusBarAppearanceUpdate];
+        } completion:NULL];
+    }
+    
+    [self.navigationController setNavigationBarHidden:shouldShow animated:YES];
+    
+}
 @end

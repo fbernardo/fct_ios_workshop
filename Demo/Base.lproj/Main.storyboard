@@ -49,7 +49,7 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" title="Choose da pics..." id="Yt6-Lc-dHI">
-                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="O3c-Ux-gG5">
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" systemItem="action" id="O3c-Ux-gG5">
                             <connections>
                                 <segue destination="tLP-Cn-5KT" kind="push" identifier="pushTileVC" id="bHR-OE-9S1"/>
                             </connections>
@@ -76,12 +76,18 @@
                                 <rect key="frame" x="142" y="265" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </activityIndicatorView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GTc-eQ-zQk">
-                                <rect key="frame" x="0.0" y="65" width="320" height="503"/>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GTc-eQ-zQk">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Sbb-ea-2MD" appends="YES" id="vqD-wi-WsN"/>
+                                </connections>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.17254901959999999" green="0.17254901959999999" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Sbb-ea-2MD" appends="YES" id="8zE-62-MAf"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Da tile!" id="Zc5-1t-c7B"/>
                     <connections>
@@ -90,6 +96,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f0e-XK-x3b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Sbb-ea-2MD">
+                    <connections>
+                        <action selector="didTapView:" destination="tLP-Cn-5KT" id="okc-Dy-lv4"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1199" y="-3"/>
         </scene>

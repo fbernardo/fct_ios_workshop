@@ -15,4 +15,8 @@
 @property (strong, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
 
+@property (nonatomic) BOOL shouldHideStatusBar;
+
+- (IBAction)didTapView:(id)sender;
+
 @end

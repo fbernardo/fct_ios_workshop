@@ -89,5 +89,25 @@ static NSString *const CellIdentifier = @"PhotoCellIdentifier";
     return cell;
 }
 
+#pragma mark - UICollectionViewDelegate
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self enableActionButtonAccordingToNumberOfSelectedPictures];
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self enableActionButtonAccordingToNumberOfSelectedPictures];
+}
+
+#pragma mark - Private stuff
+
+- (void)enableActionButtonAccordingToNumberOfSelectedPictures
+{
+    NSInteger count = self.collectionView.indexPathsForSelectedItems.count;
+    self.navigationItem.rightBarButtonItem.enabled = count >= kPhotosTableViewControllerMinimum && count <= kPhotosTableViewControllerMaximum;
+}
+
 
 @end
